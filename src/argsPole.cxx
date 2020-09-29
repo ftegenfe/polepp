@@ -139,7 +139,7 @@ void argsPole(LIMITS::Pole *pole, int argc, char *argv[]) {
       PDF::gPoisson.clrStat();
     }
   }
-  catch (ArgException e) {
+  catch (ArgException & e) {
     std::cerr << "ERROR: " << e.error() << " " << e.argId() << std::endl;
   }
 }

@@ -170,7 +170,7 @@ void argsCoverage(Coverage *coverage, LIMITS::Pole *pole, int argc, char *argv[]
     coverage->setEffTrue(effMin.getValue(), effMax.getValue(), effStep.getValue());
     coverage->setBkgTrue(bkgMin.getValue(), bkgMax.getValue(), bkgStep.getValue());
   }
-  catch (ArgException e) {
+  catch (ArgException & e) {
     std::cout << "ERROR: " << e.error() << " " << e.argId() << std::endl;
   }
 }

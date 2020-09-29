@@ -5,7 +5,9 @@
 //
 #include "Combination.h"
 
-class Pole;
+using namespace LIMITS;
+
+//class Pole;
 
 class Combine {
  public:
